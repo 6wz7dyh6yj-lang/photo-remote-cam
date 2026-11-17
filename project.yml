@@ -1,0 +1,27 @@
+name: PhotoRemoteCam
+options:
+  bundleIdPrefix: com.photoremote
+  deploymentTarget:
+    iOS: "15.0"
+  createIntermediateGroups: true
+settingGroups:
+  common:
+    CODE_SIGN_STYLE: Manual
+    CODE_SIGNING_ALLOWED: NO
+    CODE_SIGNING_REQUIRED: NO
+    SWIFT_VERSION: "5.0"
+    TARGETED_DEVICE_FAMILY: "1"
+    SUPPORTED_PLATFORMS: iphoneos
+targets:
+  PhotoRemoteCam:
+    type: application
+    platform: iOS
+    sources:
+      - path: PhotoRemoteCam
+    info:
+      path: PhotoRemoteCam/Info.plist
+    settings:
+      groups: [common]
+      PRODUCT_BUNDLE_IDENTIFIER: com.photoremote.cam
+      PRODUCT_NAME: PhotoRemoteCam
+      GENERATE_INFOPLIST_FILE: NO
